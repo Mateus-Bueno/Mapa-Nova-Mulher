@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Mapa da rede de apoio no entorno da ONG Nova Mulher." />
+  <title>Nova Mulher | Rede de apoio</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@^6.11.2/dist/maplibre-gl.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">ONG NOVA MULHER</p>
+        <h1>Rede de apoio no território</h1>
+        <p class="subtitle">
+          Explore serviços de saúde, proteção, assistência social e apoio à mulher
+          próximos à ONG.
+        </p>
+      </div>
+
+      <div class="radius-badge" aria-label="Área inicial de estudo">
+        <span>Área inicial</span>
+        <strong>3 km</strong>
+      </div>
+    </header>
+
+    <section class="filters-panel" aria-label="Filtros do mapa">
+      <div class="filters-heading">
+        <div>
+          <span class="section-label">DO QUE VOCÊ PRECISA?</span>
+          <p>Selecione uma categoria para destacar os serviços relacionados.</p>
+        </div>
+        <button id="reset-view" class="secondary-button" type="button">
+          Centralizar mapa
+        </button>
+      </div>
+
+      <div id="filters" class="filter-list">
+        <button class="filter-chip active" data-category="todos" type="button">Todos</button>
+        <button class="filter-chip" data-category="apoio_mulher" type="button">💜 Apoio à mulher</button>
+        <button class="filter-chip" data-category="saude" type="button">✚ Saúde</button>
+        <button class="filter-chip" data-category="seguranca" type="button">🛡 Proteção</button>
+        <button class="filter-chip" data-category="assistencia" type="button">🤝 Assistência social</button>
+        <button class="filter-chip" data-category="saude_mental" type="button">◉ Saúde mental</button>
+      </div>
+    </section>
+
+    <section class="map-card">
+      <div class="map-toolbar">
+        <div>
+          <span class="section-label">MAPA INTERATIVO</span>
+          <p><strong id="visible-count">0</strong> serviços visíveis na área apresentada.</p>
+        </div>
+
+        <div class="legend">
+          <span><i class="legend-dot ong-dot"></i> Nova Mulher</span>
+          <span><i class="legend-dot service-dot"></i> Rede de apoio</span>
+        </div>
+      </div>
+
+      <div class="map-stage">
+        <div id="map" aria-label="Mapa da rede de apoio próxima à ONG Nova Mulher"></div>
+
+        <aside id="details-panel" class="details-panel" aria-live="polite">
+          <button id="close-details" class="close-button" type="button" aria-label="Fechar detalhes">×</button>
+          <span id="details-category" class="details-category">Selecione um ponto</span>
+          <h2 id="details-name">Conheça a rede de apoio</h2>
+          <p id="details-description">
+            Clique em um marcador do mapa para ver endereço, horário e como o serviço pode ajudar.
+          </p>
+          <dl class="details-list">
+            <div>
+              <dt>Endereço</dt>
+              <dd id="details-address">—</dd>
+            </div>
+            <div>
+              <dt>Horário</dt>
+              <dd id="details-hours">—</dd>
+            </div>
+            <div>
+              <dt>Contato</dt>
+              <dd id="details-contact">—</dd>
+            </div>
+          </dl>
+          <p id="details-note" class="details-note">
+            Protótipo para validação visual. As coordenadas dos serviços devem ser verificadas antes da publicação final.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="footer-note">
+      <p>
+        <strong>Emergência:</strong> 190 &nbsp;•&nbsp;
+        <strong>Central de Atendimento à Mulher:</strong> 180
+      </p>
+      <p>Protótipo inicial — Projeto Nova Mulher.</p>
+    </footer>
+  </main>
+
+  <script type="module" src="./js/map.js"></script>
+</body>
+</html>

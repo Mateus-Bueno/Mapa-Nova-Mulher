@@ -1,0 +1,142 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "title": "Protótipo — Rede de apoio Nova Mulher",
+    "note": "Coordenadas aproximadas baseadas em CEP/logradouro para validação visual. Validar números exatos na etapa final."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "ong",
+        "name": "ONG Nova Mulher",
+        "category": "apoio_mulher",
+        "address": "R. Adolfo Kurt Boehm, 43 - Cachoeirinha, São Paulo - SP, 02882-050",
+        "hours": "Segunda a sexta, 09h–17h",
+        "contact": "(11) 3859-3411 | WhatsApp: (11) 96190-2074",
+        "description": "Ponto central do projeto. Acolhimento psicossocial, orientação jurídica, acompanhamento de casos e ações de fortalecimento e autonomia."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6691999,
+          -23.4720956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "service",
+        "name": "Centro de Referência da Mulher – Casa Brasilândia",
+        "category": "apoio_mulher",
+        "address": "R. Sílvio Bueno Peruche, 538 - Jardim Ondina, São Paulo - SP, 02871-050",
+        "hours": "Segunda a sexta, horário comercial",
+        "contact": "(11) 2476-0170",
+        "description": "Acolhimento e orientação para mulheres, com encaminhamentos para a rede de proteção."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6768463,
+          -23.4629095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "service",
+        "name": "72º Distrito Policial – Vila Penteado",
+        "category": "seguranca",
+        "address": "R. Sílvio Bueno Peruche, 500 - Jardim Ondina, São Paulo - SP, 02871-050",
+        "hours": "24 horas",
+        "contact": "(11) 3851-4488",
+        "description": "Atendimento policial e registro de ocorrências."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.67889,
+          -23.46345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "service",
+        "name": "UBS Dr. Augusto Leopoldo Ayrosa Galvão",
+        "category": "saude",
+        "address": "R. Joaquina Maria dos Santos, 198 - São Paulo - SP, 02860-110",
+        "hours": "Segunda a sexta, 07h–19h",
+        "contact": "(11) 3851-8235",
+        "description": "Atenção básica em saúde e possível porta de entrada para acompanhamento e encaminhamentos."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.67327,
+          -23.47075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "service",
+        "name": "UPA III – Jardim Peri",
+        "category": "saude",
+        "address": "R. Afonso Lopes Vieira, 35 - Vila Dionísia, São Paulo - SP, 02671-100",
+        "hours": "24 horas",
+        "contact": "(11) 5237-4896",
+        "description": "Atendimento de urgência e emergência, incluindo suporte médico e serviço social."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6654047,
+          -23.465086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "service",
+        "name": "Base Polícia Militar",
+        "category": "seguranca",
+        "address": "Praça Manuel da Costa Negreiros, 66 - Vila Nova Cachoeirinha, São Paulo - SP, 02610-120",
+        "hours": "24 horas",
+        "contact": "Emergência: 190",
+        "description": "Ponto de apoio policial para situações de risco e emergência."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6669821,
+          -23.4740231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "service",
+        "name": "CAPS AD II Cachoeirinha",
+        "category": "saude_mental",
+        "address": "R. Desembargador Rodrigues Sette, 111 - Jardim Peri, São Paulo - SP, 02634-070",
+        "hours": "Confirmar com a unidade",
+        "contact": "(11) 2232-4430",
+        "description": "Atenção psicossocial especializada relacionada ao uso de álcool e outras drogas."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.65018,
+          -23.45852
+        ]
+      }
+    }
+  ]
+}
