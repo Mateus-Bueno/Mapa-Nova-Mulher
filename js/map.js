@@ -3,9 +3,36 @@ import * as maplibregl from "https://unpkg.com/maplibre-gl@^6.11.2/dist/maplibre
 const ONG_CENTER = [-46.6691999, -23.4720956];
 const RADIUS_KM = 3;
 
-// Demo style oficial do MapLibre.
-// Para produção, vale trocar por um provedor de tiles/estilo apropriado ao projeto.
-const MAP_STYLE = "https://demotiles.maplibre.org/style.json";
+const map = new maplibregl.Map({
+  container: "map",
+  style: {
+    version: 8,
+    sources: {
+      "osm-raster": {
+        type: "raster",
+        tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
+        tileSize: 256,
+        attribution: "© OpenStreetMap contributors"
+      }
+    },
+    layers: [
+      {
+        id: "osm-raster",
+        type: "raster",
+        source: "osm-raster",
+        minzoom: 0,
+        maxzoom: 19
+      }
+    ]
+  },
+  center: ONG_CENTER,
+  zoom: 13.35,
+  minZoom: 11.6,
+  maxZoom: 17.5,
+  pitchWithRotate: false,
+  dragRotate: false,
+  attributionControl: true
+});
 
 const categoryLabels = {
   todos: "Todos",
@@ -23,18 +50,6 @@ const categorySymbols = {
   assistencia: "↔",
   saude_mental: "●"
 };
-
-const map = new maplibregl.Map({
-  container: "map",
-  style: MAP_STYLE,
-  center: ONG_CENTER,
-  zoom: 13.35,
-  minZoom: 11.6,
-  maxZoom: 17.5,
-  pitchWithRotate: false,
-  dragRotate: false,
-  attributionControl: true
-});
 
 map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "bottom-left");
 map.addControl(new maplibregl.ScaleControl({ maxWidth: 110, unit: "metric" }), "bottom-left");
@@ -207,7 +222,7 @@ map.on("load", async () => {
     source: "study-area",
     paint: {
       "fill-color": "#77205f",
-      "fill-opacity": 0.035
+      "fill-opacity": 0.02
     }
   });
 
@@ -218,7 +233,7 @@ map.on("load", async () => {
     paint: {
       "line-color": "#77205f",
       "line-width": 2,
-      "line-opacity": 0.58,
+      "line-opacity": 0.45,
       "line-dasharray": [2, 2]
     }
   });
@@ -234,7 +249,7 @@ map.on("load", async () => {
     source: "outside-mask",
     paint: {
       "fill-color": "#f5f2f3",
-      "fill-opacity": 0.53
+      "fill-opacity": 0.18
     }
   });
 
@@ -248,11 +263,6 @@ map.on("load", async () => {
   circlePolygon(ONG_CENTER, RADIUS_KM).geometry.coordinates[0].forEach((coord) => bounds.extend(coord));
   map.fitBounds(bounds, { padding: 52, duration: 0, maxZoom: 14 });
 
-  // Destaque inicial da ONG.
   const ongFeature = geojson.features.find((feature) => feature.properties.kind === "ong");
   if (ongFeature) showDetails(ongFeature);
-});
-
-map.on("click", () => {
-  // Mantém o painel aberto no desktop; no celular o usuário pode fechá-lo pelo X.
 });
