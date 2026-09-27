@@ -120,10 +120,7 @@ function showDetails(feature) {
   details.hours.textContent = p.hours || "Confirmar com a instituição";
   details.contact.textContent = p.contact || "Não informado";
 
-  details.note.textContent =
-    p.kind === "ong"
-      ? "A Nova Mulher é o ponto de referência central deste mapa."
-      : "Coordenada usada neste protótipo é aproximada, baseada no logradouro/CEP. Validar o ponto exato antes da publicação final.";
+  details.note.textContent = "Validar notas de rodapé";
 }
 
 function createMarker(feature) {
