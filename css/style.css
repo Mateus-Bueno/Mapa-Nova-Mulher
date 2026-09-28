@@ -344,8 +344,7 @@ h1 {
 
 @media (max-width: 780px) {
   .app-shell {
-    width: min(100% - 20px, 1240px);
-    padding-top: 18px;
+    width: min(100% - 28px, 1240px);
   }
 
   .topbar,
@@ -365,9 +364,15 @@ h1 {
     align-self: flex-start;
   }
 
-  .map-stage,
+  .map-stage {
+    min-height: 430px;
+    margin: 0 10px 12px;
+    border-radius: 18px;
+    overflow: hidden;
+  }
+
   #map {
-    min-height: 680px;
+    min-height: 430px;
   }
 
   .details-panel {
