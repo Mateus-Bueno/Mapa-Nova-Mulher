@@ -137,6 +137,25 @@
           -23.457232563018202
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "service",
+        "name": "Casa da Mulher",
+        "category": "apoio_mulher",
+        "address": "Av. Dep. Emílio Carlos, 3460 - Limão, São Paulo - SP, 02721-200",
+        "hours": "Segunda a sexta, 08h–18h",
+        "contact": "(11) 98880-3551",
+        "description": "oferece atendimento especializado a mulheres em situação de violência ou vulnerabilidade social, com acompanhamento psicológico, social e orientação jurídica."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.67138738989277,
+          -23.477884060632118
+        ]
+      }
     }
   ]
 }
