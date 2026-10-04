@@ -70,25 +70,96 @@ h1 {
   line-height: 1.55;
 }
 
-.radius-badge {
+.radius-control {
   flex: 0 0 auto;
-  min-width: 126px;
+  min-width: 196px;
   padding: 14px 18px;
   border: 1px solid var(--border);
   border-radius: 18px;
   background: var(--surface);
+}
+
+.radius-control-label {
+  display: block;
+  margin-bottom: 9px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 650;
+}
+
+.radius-toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.radius-option {
+  min-width: 38px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 750;
+  transition: color 160ms ease;
+}
+
+.radius-option:last-child {
   text-align: right;
 }
 
-.radius-badge span {
-  display: block;
-  color: var(--muted);
-  font-size: 0.78rem;
+.radius-option.active {
+  color: var(--brand);
 }
 
-.radius-badge strong {
-  color: var(--brand);
-  font-size: 1.45rem;
+.radius-switch {
+  position: relative;
+  display: inline-flex;
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+
+.radius-switch input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.radius-switch-track {
+  position: relative;
+  display: block;
+  width: 54px;
+  height: 30px;
+  border: 1px solid #cfc6cb;
+  border-radius: 999px;
+  background: var(--brand-soft);
+  transition: background 160ms ease, border-color 160ms ease;
+}
+
+.radius-switch-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--brand);
+  box-shadow: 0 2px 7px rgba(39, 25, 34, 0.20);
+  transition: transform 180ms ease;
+}
+
+.radius-switch input:checked + .radius-switch-track {
+  border-color: var(--brand);
+  background: var(--brand-soft);
+}
+
+.radius-switch input:checked + .radius-switch-track .radius-switch-thumb {
+  transform: translateX(24px);
+}
+
+.radius-switch input:focus-visible + .radius-switch-track {
+  outline: 3px solid rgba(119, 32, 95, 0.28);
+  outline-offset: 3px;
 }
 
 .filters-panel {
@@ -345,6 +416,7 @@ h1 {
 @media (max-width: 780px) {
   .app-shell {
     width: min(100% - 28px, 1240px);
+    padding-top: 18px;
   }
 
   .topbar,
@@ -355,15 +427,16 @@ h1 {
     flex-direction: column;
   }
 
-  .radius-badge {
+  .radius-control {
     align-self: flex-start;
-    text-align: left;
+    width: min(100%, 240px);
   }
 
   .secondary-button {
     align-self: flex-start;
   }
 
+  /* Mapa mais compacto no celular, com margens que facilitam a rolagem da página. */
   .map-stage {
     min-height: 430px;
     margin: 0 10px 12px;
@@ -375,13 +448,29 @@ h1 {
     min-height: 430px;
   }
 
+  .map-toolbar {
+    padding: 15px 16px;
+  }
+
   .details-panel {
     top: auto;
-    bottom: 14px;
-    left: 14px;
-    right: 14px;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
     width: auto;
-    max-height: 48%;
+    max-height: 52%;
     overflow-y: auto;
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .maplibregl-ctrl-bottom-left {
+    left: 4px;
+    bottom: 4px;
+  }
+
+  .maplibregl-ctrl-bottom-right {
+    right: 4px;
+    bottom: 4px;
   }
 }

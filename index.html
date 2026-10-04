@@ -22,9 +22,24 @@
         </p>
       </div>
 
-      <div class="radius-badge" aria-label="Área inicial de estudo">
-        <span>Área inicial</span>
-        <strong>10 km</strong>
+      <div class="radius-control" aria-label="Raio da área exibida">
+        <span class="radius-control-label">Área exibida</span>
+        <div class="radius-toggle-row">
+          <span id="radius-3-label" class="radius-option active">3 km</span>
+          <label class="radius-switch" for="radius-toggle">
+            <input
+              id="radius-toggle"
+              type="checkbox"
+              role="switch"
+              aria-label="Alternar área exibida entre 3 e 10 quilômetros"
+              aria-checked="false"
+            />
+            <span class="radius-switch-track" aria-hidden="true">
+              <span class="radius-switch-thumb"></span>
+            </span>
+          </label>
+          <span id="radius-10-label" class="radius-option">10 km</span>
+        </div>
       </div>
     </header>
 
