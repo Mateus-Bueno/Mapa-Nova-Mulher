@@ -1,7 +1,7 @@
 import * as maplibregl from "https://unpkg.com/maplibre-gl@^6.11.2/dist/maplibre-gl.mjs";
 
 const ONG_CENTER = [-46.668313273753355, -23.473027172449523];
-const RADIUS_KM = 3;
+const RADIUS_KM = 10;
 const isMobile = window.matchMedia("(max-width: 780px)").matches;
 
 const map = new maplibregl.Map({

@@ -199,25 +199,6 @@
       "type": "Feature",
       "properties": {
         "kind": "service",
-        "name": "9ª Delegacia de Defesa da Mulher – Zona Oeste",
-        "category": "seguranca",
-        "address": "Av. Menotti Laudisio, 286 - Pirituba, São Paulo - SP",
-        "hours": "Segunda a sexta, 09h–18h",
-        "contact": "(11) 3974-8890",
-        "description": "Atendimento policial especializado a mulheres em situação de violência."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -46.725147965532,
-          -23.482008046508227
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "kind": "service",
         "name": "CREAS Casa Verde",
         "category": "assistencia",
         "address": "R. Crisólia, 53 - Jardim Primavera, São Paulo - SP, 02756-000",
