@@ -121,8 +121,6 @@ function showDetails(feature) {
   details.address.textContent = p.address || "Não informado";
   details.hours.textContent = p.hours || "Confirmar com a instituição";
   details.contact.textContent = p.contact || "Não informado";
-
-  details.note.textContent = "Validar notas de rodapé";
 }
 
 function createMarker(feature) {

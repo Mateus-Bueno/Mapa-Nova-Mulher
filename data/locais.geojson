@@ -147,13 +147,146 @@
         "address": "Av. Dep. Emílio Carlos, 3460 - Limão, São Paulo - SP, 02721-200",
         "hours": "Segunda a sexta, 08h–18h",
         "contact": "(11) 98880-3551",
-        "description": "oferece atendimento especializado a mulheres em situação de violência ou vulnerabilidade social, com acompanhamento psicológico, social e orientação jurídica."
+        "description": "Oferece atendimento especializado a mulheres em situação de violência ou vulnerabilidade social, com acompanhamento psicológico, social e orientação jurídica."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -46.67138738989277,
           -23.477884060632118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "service",
+        "name": "Associação Fala Mulher",
+        "category": "apoio_mulher",
+        "address": "R. Ferreira de Almeida, 23 - Casa Verde, São Paulo - SP",
+        "hours": "Segunda a sexta, 09h–17h",
+        "contact": "(11) 3858-8279",
+        "description": "Acolhimento de mulheres em situação de violência, acompanhamento psicossocial, orientação e articulação com a rede."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.666929348927894,
+          -23.508476003293445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "service",
+        "name": "4ª Delegacia de Defesa da Mulher – Norte",
+        "category": "seguranca",
+        "address": "Av. Itaberaba, 731 - Freguesia do Ó, São Paulo - SP, 02734-000",
+        "hours": "24 horas",
+        "contact": "(11) 3976-2908",
+        "description": "Delegacia especializada no atendimento a mulheres, com registro e investigação de ocorrências e encaminhamento para medidas de proteção."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.69769115141728,
+          -23.49478561149186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "service",
+        "name": "9ª Delegacia de Defesa da Mulher – Zona Oeste",
+        "category": "seguranca",
+        "address": "Av. Menotti Laudisio, 286 - Pirituba, São Paulo - SP",
+        "hours": "Segunda a sexta, 09h–18h",
+        "contact": "(11) 3974-8890",
+        "description": "Atendimento policial especializado a mulheres em situação de violência."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.725147965532,
+          -23.482008046508227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "service",
+        "name": "CREAS Casa Verde",
+        "category": "assistencia",
+        "address": "R. Crisólia, 53 - Jardim Primavera, São Paulo - SP, 02756-000",
+        "hours": "Segunda a sexta, 08h–18h",
+        "contact": "(11) 3983-2783",
+        "description": "Atendimento especializado a pessoas e famílias em situação de violação de direitos, com acompanhamento e encaminhamentos para a rede socioassistencial."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.67629206111975,
+          -23.48752440557527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "service",
+        "name": "CRAS Cachoeirinha",
+        "category": "assistencia",
+        "address": "Av. Imirim, 4328 - Imirim, São Paulo - SP, 02464-700",
+        "hours": "Segunda a sexta, 08h–18h",
+        "contact": "(11) 93585-2344",
+        "description": "Porta de entrada da proteção social básica, com orientação, acompanhamento e encaminhamento de famílias para serviços da rede socioassistencial."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.66463845179984,
+          -23.475133056784195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "service",
+        "name": "Hospital e Maternidade Escola Dr. Mário de Moraes Altenfelder Silva – Hospital Cachoeirinha",
+        "category": "saude",
+        "address": "Av. Dep. Emílio Carlos, 3100 - Limão, São Paulo - SP, 02720-200",
+        "hours": "24 horas",
+        "contact": "(11) 98971-3602",
+        "description": "Serviço hospitalar da Zona Norte e referência para atendimento e orientação em situações de violência sexual."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6711604545582,
+          -23.480098452776456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "service",
+        "name": "Defensoria Pública do Estado de São Paulo – Unidade Regional",
+        "category": "seguranca",
+        "address": "R. Mateus de Leão, 46 - Vila Albertina / Freguesia do Ó, São Paulo - SP",
+        "hours": "Segunda a sexta, 08h–17h",
+        "contact": "0800 773 4340",
+        "description": "Orientação e assistência jurídica gratuita para pessoas que atendam aos critérios da Defensoria Pública, incluindo demandas relacionadas à proteção de mulheres."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.69257285333043,
+          -23.49655713688537
         ]
       }
     }
