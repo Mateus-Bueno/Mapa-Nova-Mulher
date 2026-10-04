@@ -1,7 +1,6 @@
 import * as maplibregl from "https://unpkg.com/maplibre-gl@^6.11.2/dist/maplibre-gl.mjs";
 
 const ONG_CENTER = [-46.668313273753355, -23.473027172449523];
-const RADIUS_OPTIONS = [3, 10];
 let currentRadiusKm = 3;
 
 const isMobile = window.matchMedia("(max-width: 780px)").matches;
@@ -99,7 +98,7 @@ document
   });
 
 radiusToggle.addEventListener("change", () => {
-  currentRadiusKm = radiusToggle.checked ? 10 : 3;
+  currentRadiusKm = radiusToggle.checked ? 5 : 3;
 
   radiusToggle.setAttribute(
     "aria-checked",
@@ -113,7 +112,7 @@ radiusToggle.addEventListener("change", () => {
 
   radius10Label.classList.toggle(
     "active",
-    currentRadiusKm === 10
+    currentRadiusKm === 5
   );
 
   updateStudyArea();
